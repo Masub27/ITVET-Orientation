@@ -1,4 +1,54 @@
-<iframe 
-src="https://liascript.github.io/course/?https://raw.githubusercontent.com/Masub27/ITVET-Orientation/main/README.md" 
-style="position:fixed;inset:0;width:100%;height:100%;border:0" 
-title="ITVET Orientation" allowfullscreen></iframe>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ITVET orientation guide for students at Otto von Guericke University Magdeburg">
+  <title>ITVET Orientation Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">ITVET – Orientation Guide</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a class="active" href="#top">Home</a>
+      <a href="#arrival">Arrival Steps</a>
+      <a href="#myovgu">myOVGU</a>
+      <a href="#modules">Modules</a>
+      <a href="#timetable">Timetable</a>
+      <a href="#thesis">Thesis</a>
+      <a href="#contacts">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <p class="eyebrow">Otto von Guericke University Magdeburg</p>
+    <h1>ITVET Student Orientation</h1>
+    <p>Essential guidance, programme information and course schedules for a successful start.</p>
+  </section>
+
+  <main class="page-shell">
+    <div class="notice" role="status">
+      <strong>Welcome to ITVET</strong>
+      <span>Use the navigation above or ask the orientation assistant to find information quickly.</span>
+    </div>
+    <div id="course-content" aria-live="polite">
+      <div class="loading">Loading the orientation guide…</div>
+    </div>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <footer>
+    <strong>ITVET Programme</strong>
+    <span>Otto von Guericke University Magdeburg</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
